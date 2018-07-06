@@ -3,7 +3,7 @@
       <div>
         <h3>Hi, <a href="{{ .Site.Author.aboutpage }}">I'm {{ .Site.Author.firstname }}</a></h3>
         <p>
-          {{ partial "bio.html" . }}
+          {{ partial "bio.md" . }}
         </p>
       </div>
       {{ if isset .Site.Author "flickrid" | and ( not ( eq .Site.Author.flickrid "" ) ) }}
