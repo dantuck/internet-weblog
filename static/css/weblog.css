@@ -45,6 +45,8 @@ blockquote p:last-child {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+
+  border-top: .25rem solid rgb(241,87,37);
 }
 
 .content {
@@ -90,7 +92,6 @@ nav ul {
 nav ul > li {
   background-color: #fafafa;
   display: inline;
-  float: left;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -344,6 +345,11 @@ and (max-width: 780px) {
     text-align: center;
   }
 
+  .menu {
+    background-color: #fafafa;
+    border-bottom: #f2f2f2 1px solid;
+  }
+
   nav ul {
     margin: 0;
     padding: 0;
@@ -351,11 +357,15 @@ and (max-width: 780px) {
 
   nav ul > li {
     background-color: #fafafa;
-    display:list-item;
+    display: inline-block;
     float: none;
     margin: 0;
     padding: 10px;
-    border-bottom: #f2f2f2 1px solid;
+    border-bottom: none;
+  }
+
+  nav ul > li .rss-link {
+    display: none;
   }
 
   nav ul:first-child {
@@ -364,5 +374,14 @@ and (max-width: 780px) {
 
   .post-group-item {
     width: 100%;
+  }
+
+  .micropost {
+    padding: 15px;
+  }
+
+  .post, .page, .post-groups {
+    margin: 0 auto 40px;
+    max-width: 780px;
   }
 }
