@@ -42,7 +42,7 @@ blockquote p:last-child {
 
 .site {
   display: flex;
-  min-height: 100vh;
+  min-height: calc(100vh - .25rem);
   flex-direction: column;
   margin: 0;
 
@@ -62,11 +62,21 @@ header {
 header h1 {
   text-align: left;
   vertical-align: middle;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 22px;
   margin: 0 auto;
   padding: 10px 10px 0 10px;
   max-width: 720px;
+  color: #5B636E;
+}
+
+header h2 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 auto;
+  padding: 6px 10px 0 12px;
   color: #5B636E;
 }
 
@@ -344,9 +354,21 @@ and (max-width: 780px) {
   }
 
   header h1 {
-    font-size: 22px;
-    line-height: 30px;
-    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
+    max-width: 720px;
+    color: #5B636E;
+  }
+
+  header h2 {
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -2px auto 0 auto;
+    padding: 6px 15px 10px 12px;
+    color: #5B636E;
   }
 
   nav .menu {
